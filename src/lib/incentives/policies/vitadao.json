@@ -1,0 +1,12 @@
+{
+  "platform": "VitaDAO",
+  "rules": [
+    {
+      "if": { "score_gte": 3.0 },
+      "effects": {
+        "badge": "Senior Researcher",
+        "access": ["grant-voting"]
+      }
+    }
+  ]
+}

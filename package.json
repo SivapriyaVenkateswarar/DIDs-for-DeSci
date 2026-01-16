@@ -1,27 +1,48 @@
 {
   "name": "de-sci-reputation",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "lint": "biome check",
     "format": "biome format --write"
   },
   "dependencies": {
-    "next": "16.0.10",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "@digitalbazaar/did-method-key": "^5.3.0",
+    "@digitalbazaar/ed25519-signature-2020": "^5.4.0",
+    "@digitalbazaar/ed25519-verification-key-2020": "^4.2.0",
+    "@digitalbazaar/vc": "^7.2.0",
+    "@noble/ed25519": "^3.0.0",
+    "@veramo/did-provider-key": "^6.0.0",
+    "credentials-context": "^2.0.0",
+    "cross-fetch": "^4.1.0",
+    "did-jwt-vc": "^4.0.16",
+    "did-resolver": "^4.1.0",
+    "ed25519-signature-2020-context": "^1.1.0",
+    "jsonld": "^9.0.0",
+    "jsonld-signatures": "^11.5.0",
+    "kubo-rpc-client": "^6.0.2",
+    "multiformats": "^13.4.2",
+    "next": "^16.0.10",
+    "pg": "^8.16.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/jsonld": "^1.5.15",
+    "@types/node": "^20.19.27",
+    "@types/pg": "^8.16.0",
+    "@types/react": "^19.2.7",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
