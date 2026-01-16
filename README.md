@@ -15,27 +15,6 @@ The system demonstrates a full flow:
 
 ---
 
-## Project Structure
-
-de-sci-reputation/
-├── src/
-│ ├── app/
-│ │ ├── api/ # API endpoints for identity, VC issuance, verification, reputation, and incentives
-│ │ │ ├── identity/
-│ │ │ ├── issuer/
-│ │ │ ├── storage/
-│ │ │ ├── verify/
-│ │ │ ├── reputation/
-│ │ │ └── incentives/
-│ ├── lib/ # Core libraries for DID, VC handling, verification, IPFS storage, privacy, reputation, and incentives
-│ └── components/ # UI components (e.g., WalletAuth)
-├── types/ # TypeScript type definitions
-├── package.json
-├── tsconfig.json
-├── .env # Environment variables (database URL, keys, etc.)
-└── README.md
----
-
 ## Key Features
 
 ### 1. DID-Based Identity
